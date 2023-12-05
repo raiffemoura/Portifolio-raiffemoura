@@ -1,0 +1,14 @@
+{
+  "name": "portifolio-raiffemoura",
+  "version": "1.0.0",
+  "description": "My portdolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raiffe Moura",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^11.0.5"
+  }
+}

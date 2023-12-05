@@ -1,0 +1,387 @@
+body{
+   background-color: #e3e3e7;
+   margin: 0;
+   padding: 0;
+   background-image: url(../assets/back.png);
+   background-position: bottom;
+   background-repeat: no-repeat;
+
+}
+
+.container{
+    background-image: url(../assets/iphone-cable.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 15px;
+
+}
+
+.facetime{
+    background-image: url(../assets/iphone-cable-facetime.png);
+    .apps{
+        display: none;
+    }
+    .apps-bottom{
+        display: none;
+    }
+}
+.screen{
+    width: 100%;
+    height: 200px;
+    border-radius: 50px;
+}
+
+.header{
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600; 
+    color: white;
+}
+#time{
+    margin-top: 5px;
+    padding-left: 30px;
+    font-size: 25px;
+}
+.header-right{
+    padding-right: 10px;
+    height: 45px;
+    padding-top: 7px;
+   
+    
+}
+.header-right img{
+    
+  padding-right: 2px;
+    height: 18px;
+}
+
+
+.apps{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    
+}
+/* Slide and buttons animations */
+.slide{
+    transform: translate(-312px, 0px);
+    transition: ease-in-out 0.4s;}
+
+.slide2{
+    transform: translate(-311px, 0px);
+    transition: ease-in-out 0.4s;
+}
+
+.slide3{
+    transform: translate(0px, 0px);
+    transition: ease-in-out 0.4s;
+}
+
+.slide4{
+    transform: translate(0px, 0px);
+    transition: ease-in-out 0.4s;
+}
+
+
+.apps-screen{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: start;    
+    height: 485px ;
+}
+
+.pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px; 
+    height: 20px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+    border-radius: 20px;
+   
+}
+
+.btn-slide-actived{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.btn-slide-disabled{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    margin: 5px;
+}
+
+.btn-slide-disabled:hover, .btn-slide-actived:hover{
+    transform: scale(1.5);
+    transition: 150ms linear;
+}
+.pages:hover{
+    transform: scale(1.1);
+    transition: 150ms linear;
+}
+
+
+.apps-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    width: 100%;   
+
+}
+
+.text-line{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+   
+}
+
+.text-item{
+    width: 81px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.apps-line :hover{
+    transform: scale(1.1);
+    transition: 150ms linear;
+}
+
+.apps-line :not(:hover){
+    transform: scale(1);
+    transition: 50ms;
+}
+
+/* =====================================================================*/
+/* =====================================================================*/
+/* =====================================================================*/
+/* MEDIA QUERIES */
+@media screen and (max-width: 280px) {
+    .container{
+        background-size: 100%;
+        background-position: top ;
+        height: 730px;
+    }
+    .screen{       
+        display: none;
+    }
+    
+   
+    .header-right img{
+    display: none;   
+    }
+}
+
+
+
+
+
+
+/* =====================================================================*/
+/* =====================================================================*/
+/* =====================================================================*/
+
+@media screen and (min-width: 280px) {
+    .container{
+        background-size: 280px;
+        background-position: top ;
+        height: 735px;
+        padding: 10px;  
+    }
+    .screen{
+        width: 260px;
+        margin: auto;
+    }
+    .header{
+        padding: 0px;
+    }
+    .header-right{
+        padding-right: 10px;      
+    }
+    .header-right img{
+        padding-right: 2px;
+        height: 10px;
+    }
+    #time{
+        margin-top: 6px;
+        padding-left: 30px;
+        font-size: 16px;
+    }
+    
+
+    .apps{
+        margin-top: 20px;
+    }
+    
+    .apps img, .apps2 img, .apps-bottom img{
+        width: 43px;
+        border-radius: 12px;
+    }
+    
+    .text-line{
+        margin-bottom: 13px;
+        font-size: .6rem;
+    }
+    
+    .text-item{
+        width: 63px;
+        text-align: center;
+        padding: 0px;
+        margin-top: 1px;
+    }
+
+
+
+    .apps-bottom{
+
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 70px;
+        background-color: gray;
+        border-radius: 25px;
+    }
+
+    .apps-screen{
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        align-items: start;    
+        height: 372px ;
+    }
+
+    .pages{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px auto; 
+        height: 18px;
+        width: 50px;
+        background-color: gray;
+        border-radius: 20px;
+       
+    }
+
+    .slide, .slide2{
+        transform: translate(-250px, 0px);
+        transition: ease-in-out 0.4s;}
+    
+    
+    .slide3, .slide4{
+        transform: translate(0px, 0px);
+        transition: ease-in-out 0.4s;
+    }
+}
+
+
+@media screen and (min-width: 350px) {
+    .container{
+        background-size: 350px;
+        background-position: top ;
+        height: 925px
+        
+    }
+    .screen{
+        width: 324px;
+        margin: auto;
+    }
+    .header{
+        padding: 5px;
+    }
+    .header-right{
+        padding-right: 10px;       
+    }
+    .header-right img{
+        padding-right: 2px;
+        height: 13px;
+    }
+    #time{
+        margin-top: 5px;
+        padding-left: 30px;
+        font-size: 18px;
+    }
+    .apps{
+        margin-top: 25px;
+    }
+    
+    .apps img, .apps2 img, .apps-bottom img{
+        width: 56px;
+    }
+    
+    .text-line{
+        margin-bottom: 17px;
+        font-size: .7rem;
+    }
+    
+    .text-item{
+        margin-top: 2px;
+        width: 79px;
+    }
+    .apps-bottom{
+        margin-top: 5px;
+        height: 85px;
+        border-radius: 28px;
+    }
+
+    .apps-screen{
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        align-items: start;    
+        height: 485px ;
+    }
+    
+    .pages{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px auto; 
+        height: 20px;
+        width: 60px;
+        background-color: gray;
+        border-radius: 20px;
+       
+    }
+
+    .slide, .slide2 {
+      transform: translateX(-312px);
+      transition: ease-out 0.4s;
+    }
+    
+    .slide3, .slide4 {
+    transform: translateX(0);
+    transition: ease-out 0.4s;
+  }
+   
+    };

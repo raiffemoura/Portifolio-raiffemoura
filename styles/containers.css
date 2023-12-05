@@ -1,0 +1,16 @@
+.facetime{
+    background-image: url(../assets/iphone-cable-facetime.png);
+    .apps{
+        display: none;
+    }
+    .apps-bottom{
+        display: none;
+    }
+    .pages{
+        display: none;
+    }
+}
+.off{
+    background-image: url(../assets/iphone-cable.png);
+
+}
